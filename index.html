@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title>{ myLibrary }</title>
+</head>
+<body>
+    <div class="header">
+        <h1>{ myLibrary }</h1>
+    </div>
+<div id="container">
+    <div id="btn-container">
+        <button id="addBook">Add New Book</button>
+        <button id="showBooks">Show Books</button>
+    </div>
+    <div class="form-container">
+        <form>
+            <label for="addTitle">Title:</label><br>
+            <input type = "text" id="title" name="addTitle" value=""><br>
+            <label for="addAuthor">Author:</label><br>
+            <input type = "text" id="author" name="addAuthor" value=""><br>
+            <label for="addNumPages">Number of Pages:</label><br>
+            <input type = "text" id="numPages" name="addNumPages" value=""><br>
+            <label for="addRead">Read or not?:</label>
+            <input type = "checkbox" id="read" name="addRead"><br>
+            <input type="button" id="submit-book" value="Add"></input>
+        </form>
+    </div>
+    <div id="booksList">
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th># of Pages</th>
+                <th>Read Status</th>
+                <th>Remove</th>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
+
