@@ -117,7 +117,7 @@ submitBook.addEventListener("click", (e) => {
         }
     }
 
-    const newBook = new Book(author, title, numPages, read);
+    const newBook = new Book(title, author, numPages, read);
     addBookToLibrary(newBook);
     render(myLibrary);
     clearFields();
@@ -129,4 +129,3 @@ showBooks.addEventListener('click', (e) => {
     render(myLibrary);
 
 });
-
